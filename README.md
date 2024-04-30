@@ -1,7 +1,7 @@
 ## HA-notifier
 Example script to forwards your Telegram messages to a Home Assistant entity (sensor),
 utilizing the MQTT protocol and the Mosquitto broker. 
-Just talk to bot
+Just talk to your telegram bot.
 
 ### Usage
 
