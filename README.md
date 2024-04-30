@@ -15,18 +15,18 @@ Just talk to bot
 
 1. Clone this repository.
 2. Install the required dependencies using PIP.
-3. create yaml file
+3. create hanotifier.yaml file
 
 ### hanotifier.yaml
-- bot_token:  <your telegram bot token> 
-- api_id:  <your api_id telegram account>
-- api_hash: <your api_hash telegram account>
-- ha_token: <your home assistant token> 
-- ha_address: <your home assistant server address>
-- ha_port:  <your home assistant server port>
-- mqtt_user: <your mosquitto user name>
-- mqtt_passw: <your mosquitto password>
-- mqtt_port: <your mosquitto server port>
+- bot_token:  *your telegram bot token* 
+- api_id:  *your api_id telegram account*
+- api_hash: *your api_hash telegram account*
+- ha_token: *your home assistant token* 
+- ha_address: *your home assistant server address*
+- ha_port:  *your home assistant server port*
+- mqtt_user: *your mosquitto user name*
+- mqtt_passw: *your mosquitto password*
+- mqtt_port: *your mosquitto server port*
 
 ### MQTT Sensor Configuration
 Append this entity to your configuration.yaml
