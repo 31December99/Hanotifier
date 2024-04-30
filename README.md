@@ -9,27 +9,24 @@ Just talk to bot
 
 ### Dependencies
 
-- requiremensts.txt
+- requirements.txt
 
 ### Installation
 
 1. Clone this repository.
 2. Install the required dependencies using PIP.
+3. create yaml file
 
-### Configuration
-
-Create a telegram.yaml:
-
-- token: 
-- api_id: 
-- api_hash: 
-
-Create a mqtt.yaml
-- 
-- user: 
-- passw: 
-- address: 
-- port: 
+### hanotifier.yaml
+- bot_token:  <your telegram bot token> 
+- api_id:  <your api_id telegram account>
+- api_hash: <your api_hash telegram account>
+- ha_token: <your home assistant token> 
+- ha_address: <your home assistant server address>
+- ha_port:  <your home assistant server port>
+- mqtt_user: <your mosquitto user name>
+- mqtt_passw: <your mosquitto password>
+- mqtt_port: <your mosquitto server port>
 
 ### MQTT Sensor Configuration
 Append this entity to your configuration.yaml
@@ -52,7 +49,7 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 This project is licensed under the MIT License
 
-### Output 
+### Output example
 
 - [Success] Connected to Telegram
 - [Success] Connected to the Broker
