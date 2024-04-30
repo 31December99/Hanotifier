@@ -43,7 +43,7 @@ mqtt:
     availability_topic: "Home/availability"
     payload_available: "ON"
     payload_not_available: "OFF"
-
+```
 ### Contribution
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
