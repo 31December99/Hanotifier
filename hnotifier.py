@@ -49,11 +49,11 @@ class Mqtt:
 
     @classmethod
     def connect(cls, entity: str):
-        _config = Broker.config("mqtt.yaml")
-        cls.user = _config.data['user']
-        cls.passw = _config.data['passw']
-        cls.address = _config.data['address']
-        cls.port = _config.data['port']
+        _config = Broker.config("hanotifier.yaml")
+        cls.user = _config.data['mqtt_user']
+        cls.passw = _config.data['mqtt_passw']
+        cls.address = _config.data['ha_address']
+        cls.port = _config.data['mqtt_port']
 
         cls.mosquitto = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
         cls.mosquitto.username_pw_set(cls.user, cls.passw)
