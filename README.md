@@ -31,7 +31,10 @@ Create a mqtt.yaml
 - address: 
 - port: 
 
+### MQTT Sensor Configuration
 Append this entity to your configuration.yaml
+
+```yaml
 mqtt:
   sensor:
     name: "Sensore"
