@@ -52,3 +52,11 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 This project is licensed under the MIT License
 
+### Output 
+
+[Success] Connected to Telegram
+[Success] Connected to the Broker
+[SENT:Home/helltopic] "22.34 Vdc" -> [Sensore]
+[BROKER RECEIVED:Home/helltopic] <- "b'22.34 Vdc'"
+[SENT:Home/helltopic] "Hey !" -> [Sensore]
+[BROKER RECEIVED:Home/helltopic] <- "b'Hey !'"
