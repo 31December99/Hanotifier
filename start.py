@@ -50,8 +50,8 @@ class Notifier:
     def send(self, message: str):
         self.notify.mosquitto.publish(self.topic, message)
         print(f"[SENT:{self.topic}] \"{message}\" -> [{self.entity}]")
-        time.sleep(5)
-        self.notify.mosquitto.loop_stop()
+        # time.sleep(5)
+        # self.notify.mosquitto.loop_stop()
 
 
 async def start():
