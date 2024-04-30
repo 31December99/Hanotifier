@@ -15,7 +15,8 @@ Just talk to bot
 
 1. Clone this repository.
 2. Install the required dependencies using PIP.
-3. create hanotifier.yaml file
+3. Create hanotifier.yaml file
+4. Install mosquitto add-on *(home assistant)*
 
 ### hanotifier.yaml
 - bot_token:  *your telegram bot token* 
