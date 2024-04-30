@@ -6,8 +6,8 @@ from telethon import TelegramClient, events
 
 class Telegram:
     """Load configuration data """
-    _config = Config.config("telegram.yaml")
-    token = _config.data['token']
+    _config = Config.config("hanotifier.yaml")
+    token = _config.data['bot_token']
     api_id = _config.data['api_id']
     api_hash = _config.data['api_hash']
 
@@ -19,7 +19,7 @@ class Telegram:
     async def connect(self):
         if not self.session or not self.api_id or not self.api_hash or not self.token:
             raise Exception(f"[Error] Invalid telegram data")
-        self.client = TelegramClient("hnotifier", self.api_id, self.api_hash, retry_delay=10)
+        self.client = TelegramClient(session=self.session, api_id=self.api_id, api_hash=self.api_hash, retry_delay=10)
         await self.client.start(bot_token=self.token)
         print(f"[Success] Connected to Telegram")
         self.register_event_handlers()
@@ -55,7 +55,7 @@ class Notifier:
 
 
 async def start():
-    telegram = Telegram(session="hnotifier")
+    telegram = Telegram(session="hanotifier")
     await telegram.connect()
 
 
